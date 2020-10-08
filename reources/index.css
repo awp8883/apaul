@@ -1,0 +1,62 @@
+img.banner{
+  height: 100px;
+  width: 500px;
+  text-align: center;
+  margin: auto;
+  display:block;
+}
+div.banner{
+  background-color: gray;
+}
+img.icons{
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  position:relative;
+  left: 650px;
+}
+
+h1.section{
+  font-family: 'Aftika';
+  font-weight: bold;
+  font-style: normal;
+  color: #009ad9;
+  font-size: 36px;
+  text-align: center;
+}
+div.list{
+  border: 5px;
+  color:#009ad9;
+  background-color: gray;
+  text-align:center;
+}
+.item{
+  color:#009ad9;
+  text-align: left;
+  font-size: 18px;
+  font-family: 'Aftika';
+  font-weight: bold;
+  font-style:normal;
+  position: relative;
+  left: 3px;
+}
+img.zoom{
+  height: 50px;
+  width: 50px;
+}
+hr.title{
+  border: 1px solid #009ad9;
+}
+hr.divide{
+  border: 1px dotted #009ad9;
+}
+
+
+@font-face {
+  font-family: 'Aftika';
+  src: url('AftikaBold.woff2') format('woff2'),
+      url('AftikaBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
