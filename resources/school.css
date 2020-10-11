@@ -80,6 +80,62 @@ ul#menu li {
   text-align: center;
   align-content: center;
 }
+.linkbutton{
+  text-align: center;
+}
+.calclinks{
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+.buttonx{
+  border-radius: 0;
+  margin-top: 10px;
+  margin-right: 15px;
+  padding: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-family: 'Aftika';
+  color: rgb(46, 46, 46);
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.buttonx1{
+  color:rgb(31, 31, 31);
+  background-color:#009ad9
+}
+.buttonx1:hover{
+  background-color:rgb(46, 46, 46);
+  color:#009ad9;
+}
+div.footer{
+  background-color: gray;
+  padding: 2px;
+}
+p.footer{
+  font-family: 'Aftika';
+  color: #009ad9;
+  font-style: normal;
+  font-size: 20px;
+  text-align: center;
+  margin:10px;
+}
+ul.footer{
+  list-style: inside none;
+  display: inline;
+  text-align: center;
+  color: #009ad9;
+  margin: 0;
+  padding: 0;
+  font-family: 'Aftika';
+  font-style: normal;
+  font-weight: bold;
+}
+a.footer{
+  color: #009ad9;
+  text-decoration: none;
+}
 @font-face {
   font-family: 'Aftika';
   src: url('AftikaBold.woff2') format('woff2'),
