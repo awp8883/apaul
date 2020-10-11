@@ -11,9 +11,6 @@ div.banner{
 img.icons{
   width: 30px;
   height: 30px;
-  display: inline-block;
-  position:relative;
-  left: 650px;
 }
 
 h1.section{
@@ -50,8 +47,39 @@ hr.title{
 hr.divide{
   border: 1px dotted #009ad9;
 }
-
-
+ul#menu li {
+  display:inline;
+  width: 30px;
+  height: 30px;
+  padding-right: 5px;
+}
+.table {
+	display: table;
+	margin: 0 auto;
+}
+.button{
+  border-radius: 20%;
+  margin-top: 10px;
+  margin-right: 15px;
+  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Aftika';
+  color: rgb(46, 46, 46);
+  transition-duration: 0.4s;
+}
+.button1{
+  color:rgb(31, 31, 31);
+  background-color:#009ad9
+}
+.button1:hover{
+  background-color:rgb(46, 46, 46);
+  color:#009ad9;
+}
+.center{
+  text-align: center;
+  align-content: center;
+}
 @font-face {
   font-family: 'Aftika';
   src: url('AftikaBold.woff2') format('woff2'),
