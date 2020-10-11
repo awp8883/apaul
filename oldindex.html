@@ -1,46 +1,91 @@
 <!DOCTYPE html>
 <head>
-  <title>Andrew's School Links</title>
+  <title>Andrew's School Stuff</title>
   <link href="./resources/school.css" rel="stylesheet" type="text/css">
   <link rel="icon" href="./resources/favicon.png" type="image/x-icon"/>
+  <script src="https://kit.fontawesome.com/e8eecf89dc.js" crossorigin="anonymous"></script>
 </head>
 <html>
 <body>
-<div class="banner">
-  <a href='#'><button class="button button1" type=button style='float:right;  cursor: not-allowed;opacity: 50%;'>WIP!</button></a>
-  <a href='https://school.apaul.dev'><button class="button button1" type=button style='float:right; cursor: pointer;'>HOME</button></a>
-  <img class="banner" src="resources/McLeanLogo_Static.png">
-  <div class=table>
-  <ul id='menu'>
-  <li><a href="https://classroom.google.com/u/0/h" target='_blank'><img class='icons' src='./resources/classroom.png' title='Google Classroom'></a></li>
-  <li><a href="https://calendar.google.com/calendar/u/0/r" target='_blank'><img class='icons' src='https://calendar.google.com/googlecalendar/images/favicon_v2014_31.ico' title='Google Calender'></a></li>
-  <li><a href="https://mcleanschool.myschoolapp.com/app/student#studentmyday/progress" target='_blank'><img class='icons' src='./resources/mclean.jpg' title='Mclean Portal'></a></li>
- </ul>
-</div>
-</div>
+<!--BANNER -->
+  <div class="banner">
+    <button onclick='page2()' class="button button1" type=button style='float:right;  cursor: not-allowed;opacity: 50%;'>Page 2</button></a>
+    <button onclick='home()' class="button button1" type=button style='float:right; cursor: pointer;'>HOME</button></a>
+    <img class="banner" src="resources/McLeanLogo_Static.png">
+      <div class=table>
+      <ul id='menu'>
+      <li><a href="https://classroom.google.com/u/0/h" target='_blank'><img class='icons' src='./resources/classroom.png' title='Google Classroom'></a></li>
+      <li><a href="https://calendar.google.com/calendar/u/0/r" target='_blank'><img class='icons' src='https://calendar.google.com/googlecalendar/images/favicon_v2014_31.ico' title='Google Calender'></a></li>
+      <li><a href="https://mcleanschool.myschoolapp.com/app/student#studentmyday/progress" target='_blank'><img class='icons' src='./resources/mclean.jpg' title='Mclean Portal'></a></li>
+    </ul>
+    </div>
+  </div>
+  <!--HOMEPAGE STARTS HERE -->
+<div id='home'>
+  <!--ZOOM LINKS -->
   <h1 class="section">Zoom Links</h1><hr class='title'>
-<div>
-<p class='item'>Math | 8:15-9:05 |</p><a href='https://zoom.us/j/96393863675' target="_blank"><img class='zoom' src="resources/zoom.png"></a>
-<hr class="divide">
-<p class='item'>Forensics | 9:05-9:55 |</p><a href='https://zoom.us/j/98715030982' target="_blank"><img class='zoom' src="resources/zoom.png"></a>
-<hr class="divide">
-<p class='item'>Modern World | 10:05-10:55 |</p><a href='https://zoom.us/j/99812732496' target="_blank"><img class='zoom' src="resources/zoom.png"></a>
-<hr class="divide">
-<p class='item'>Literature | 10:55-11:45 |</p><a href='https://zoom.us/j/5937055644' target="_blank"><img class='zoom' src="resources/zoom.png"></a>
-<hr class="divide">
-<p class='item'>Advisory | 11:45-12:15 | THURSDAY'S |</p><a href='https://zoom.us/j/228586521' target="_blank"><img class='zoom' src="resources/zoom.png"></a>
-<p class='item'>Grade Meeting | 12:15-12:45 | THURSDAY'S |</p><a href='https://zoom.us/j/98718585358' target="_blank"><img class='zoom' src="resources/zoom.png"></a>
-<p class='item'>Upper School Meeting | 12:15-12:45 | TUESDAY'S |</p><a href='https://zoom.us/j/5662283812' target="_blank"><img class='zoom' src="resources/zoom.png"></a>
-<hr class="divide">
-<p class='item'>English | 12:45-1:35 |</p><a href='https://zoom.us/j/98262738191' target="_blank"><img class='zoom' src="resources/zoom.png"></a>
-<hr class="divide">
-<p class='item'>Graphic Design | 1:35-2:25 |</p><a href='https://zoom.us/j/5203317745' target="_blank"><img class='zoom' src="resources/zoom.png"></a>
-<hr class="divide">
-<p class='item'>Study Hall | 2:25-3:15 |</p><a href='https://zoom.us/j/2959550455' target="_blank"><img class='zoom' src="resources/zoom.png"></a>
-
-
-
-
+  <div id='zoom'>
+  <p class='item'>Math | 8:15-9:05 |</p><a href='https://zoom.us/j/96393863675' target="_blank"><img class='zoom' src="resources/zoom.png"></a>
+    <hr class="divide">
+  <p class='item'>Forensics | 9:05-9:55 |</p><a href='https://zoom.us/j/98715030982' target="_blank"><img class='zoom' src="resources/zoom.png"></a>
+    <hr class="divide">
+  <p class='item'>Modern World | 10:05-10:55 |</p><a href='https://zoom.us/j/99812732496' target="_blank"><img class='zoom' src="resources/zoom.png"></a>
+    <hr class="divide">
+  <p class='item'>Literature | 10:55-11:45 |</p><a href='https://zoom.us/j/5937055644' target="_blank"><img class='zoom' src="resources/zoom.png"></a>
+    <hr class="divide">
+  <p class='item'>Advisory | 11:45-12:15 | THURSDAY'S |</p><a href='https://zoom.us/j/228586521' target="_blank"><img class='zoom' src="resources/zoom.png"></a>
+  <p class='item'>Grade Meeting | 12:15-12:45 | THURSDAY'S |</p><a href='https://zoom.us/j/98718585358' target="_blank"><img class='zoom' src="resources/zoom.png"></a>
+  <p class='item'>Upper School Meeting | 12:15-12:45 | TUESDAY'S |</p><a href='https://zoom.us/j/5662283812' target="_blank"><img class='zoom' src="resources/zoom.png"></a>
+    <hr class="divide">
+  <p class='item'>English | 12:45-1:35 |</p><a href='https://zoom.us/j/98262738191' target="_blank"><img class='zoom' src="resources/zoom.png"></a>
+    <hr class="divide">
+  <p class='item'>Graphic Design | 1:35-2:25 |</p><a href='https://zoom.us/j/5203317745' target="_blank"><img class='zoom' src="resources/zoom.png"></a>
+    <hr class="divide">
+  <p class='item'>Study Hall | 2:25-3:15 |</p><a href='https://zoom.us/j/2959550455' target="_blank"><img class='zoom' src="resources/zoom.png"></a>
+  </div>
+  <!--CALCULATOR LINKS -->
+<hr style='margin:0;' class='title'>
+<div class='calclinks'>
+  <h1 class='section' style='font-size: 10; margin:0;'>Helpful Links</h1>
+<div class='linkbutton'>
+  <a href="https://www.calculatorsoup.com/calculators/geometry-plane/triangle-law-of-cosines.php" onclick="window.open('https://www.calculatorsoup.com/calculators/geometry-plane/triangle-law-of-cosines.php?do=pop','Law of Cosines Calculator','width=400,height=700,toolbar=no,menubar=no,scrollbars=yes,resizable=yes');return false;"><button style='border-radius: 0; cursor: pointer;' class='button button1'>Law of Cosines Calculator</button></a>
+  <a href="https://www.calculatorsoup.com/calculators/geometry-plane/triangle-law-of-sines.php" onclick="window.open('https://www.calculatorsoup.com/calculators/geometry-plane/triangle-law-of-sines.php?do=pop','Law of Sines Calculator','width=400,height=700,toolbar=no,menubar=no,scrollbars=yes,resizable=yes');return false;"><button style='border-radius:0;cursor: pointer;' class='button button1'>Law of Sines Calculator</button></a>
 </div>
+</div>
+<hr class=title>
+<div class='footer'>
+  <p class='footer'>Info:
+    <ul class='footer'>
+      <li><i class="fas fa-code"></i> | HTML, CSS, JavaScript</li>
+      <li><i class="fas fa-tools"></i> | VS Code, CMD, Git Bash</li>
+      <li><a class='footer' href='mailto:awp8883@gmail.com'><i class="fas fa-envelope"></i> | awp8883@gmail.com</a></li>
+    </ul>
+  </p>
+</div>
+<!--HOMEPAGE ENDS AFTER NEXT DIV -->
+</div>
+<!--PAGE2 STARTS HERE -->
+  <div id=page2 style='display: none'>
+  <h1 class='section'>Second Page</h1>
+    <hr class='title'>
+  </div>
 </body>
+
+<!--JAVA SCRIPT FOR PAGES -->
+<script>
+//function for home page/home button
+function home() {
+  var x = document.getElementById('home')
+  var y = document.getElementById('page2')
+    x.style.display = 'block'
+    y.style.display = 'none'
+  }
+//function for second page/second page button
+function page2() {
+  var x = document.getElementById('home')
+  var y = document.getElementById('page2')
+    x.style.display = 'none'
+    y.style.display = 'block'
+  }
+</script>
 </html>
