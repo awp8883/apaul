@@ -20,6 +20,17 @@ h1.section{
   color: #009ad9;
   font-size: 36px;
   text-align: center;
+  margin-bottom: 0;
+}
+h3.section{
+  font-family: 'Aftika';
+  font-weight: bold;
+  font-style: normal;
+  color: #009ad9;
+  font-size: 18px;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
 }
 div.list{
   border: 5px;
