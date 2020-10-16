@@ -4,13 +4,14 @@
   <link href="../resources/school.css" rel="stylesheet" type="text/css">
   <link rel="icon" href="../resources/favicon.png" type="image/x-icon"/>
   <script src="https://kit.fontawesome.com/e8eecf89dc.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <html>
 <body>
 <!--BANNER -->
   <div class="banner">
-    <button onclick='page2()' class="button button1" type=button style='float:right;  cursor: not-allowed;opacity: 50%;'>Page 2</button></a>
-    <button onclick='home()' class="button button1" type=button style='float:right; cursor: pointer;'>HOME</button></a>
+    <button onclick='page2x()'id='page2but' class="button button1" type=button style='float:right;  cursor: not-allowed;opacity: 50%;'>Page 2</button></a>
+    <button onclick='homex()' id='homebut' class="button button1" type=button style='float:right; cursor: pointer;'>HOME</button></a>
     <img class="banner" src="resources/McLeanLogo_Static.png">
       <div class=table>
       <ul id='menu'>
@@ -85,19 +86,14 @@
 
 <!--JAVA SCRIPT FOR PAGES -->
 <script>
-//function for home page/home button
-function home() {
-  var x = document.getElementById('home')
-  var y = document.getElementById('page2')
-    x.style.display = 'block'
-    y.style.display = 'none'
-  }
-//function for second page/second page button
-function page2() {
-  var x = document.getElementById('home')
-  var y = document.getElementById('page2')
-    x.style.display = 'none'
-    y.style.display = 'block'
-  }
+//function for page switcher
+  $('#page2but').on('click',() =>{
+    $("#home").hide();
+    $("#page2").fadeIn();
+  })
+  $('#homebut').on('click',() =>{
+    $("#home").fadeIn();
+    $("#page2").hide();
+  })
 </script>
 </html>

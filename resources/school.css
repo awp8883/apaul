@@ -51,6 +51,7 @@ div.list{
 img.zoom{
   height: 50px;
   width: 50px;
+  position: relative;
 }
 hr.title{
   border: 1px solid #009ad9;

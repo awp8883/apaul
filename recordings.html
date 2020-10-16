@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+  <title>Trig Zoom Recordings</title>
+  <link href="../resources/school.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="../resources/favicon.png" type="image/x-icon"/>
+  <script src="https://kit.fontawesome.com/e8eecf89dc.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+      p.item{
+          text-align: center;
+      }
+  </style>
+</head>
+<html>
+<body>
+<!--BANNER -->
+  <div style='padding:20px;margin:0;' class="banner">
+    <img class="banner" src="resources/McLeanLogo_Static.png">
+    </div>
+  </div>
+  <!--HOMEPAGE STARTS HERE -->
+<div id='home'>
+  <!--ZOOM LINKS -->
+  <h1 class="section">Trig Zoom Recordings</h1>
+  <h3 class='section'>Click the Zoom Icon to Download the Recording</h3><hr class='title'>
+  <div id='zoom' style='text-align: center;'>
+  <p class='item'>9/18/2020</p><a href='./recordings/09-18-2020.mp4' download><img class='zoom' src="resources/zoom.png"></a>
+    <hr class="divide">
+  <p class='item'>9/22/2020</p><a href='./recordings/9-22-2020.mp4' download><img class='zoom' src="resources/zoom.png"></a>
+    <hr class="divide">
+  <p class='item'>9/23/2020</p><a href='./recordings/9-23-2020.mp4' download><img class='zoom' src="resources/zoom.png"></a>
+    <hr class="divide">
+  <p class='item'>9/29/2020</p><a href='./recordings/9-29-2020.mp4' download><img class='zoom' src="resources/zoom.png"></a>
+    <hr class="divide">
+  <p class='item'>10/01/2020</p><a href='./recordings/10-01-2020.mp4' download><img class='zoom' src="resources/zoom.png"></a>
+    <hr class='divide'>
+  <p class='item'>10/05/2020</p><a href='./recordings/10-05-2020.mp4' download><img class='zoom' src="resources/zoom.png"></a>
+    <hr class='divide'>
+  <p class='item'>10/12/2020</p><a href='./recordings/10-12-2020.mp4' download><img class='zoom' src="resources/zoom.png"></a>
+    <hr class='divide'>
+  <p class='item'>10/13/2020</p><a href='./recordings/10-13-2020.mp4' download><img class='zoom' src="resources/zoom.png"></a>
+    <hr class="divide">
+  <p class='item'>10/15/2020</p><a href='./recordings/10-15-2020.mp4' download><img class='zoom' src="resources/zoom.png"></a>
+    <hr class="divide">
+  <p class='item'>10/16/2020</p><a href='./recordings/10-16-2020.mp4' download><img class='zoom' src="resources/zoom.png"></a>
+  </div>
+  <!--CALCULATOR LINKS -->
+<hr class=title>
+<div class='footer'>
+  <p class='footer'>Info:
+    <ul class='footer'>
+      <li><i class="fas fa-code"></i> | HTML, CSS, JavaScript</li>
+      <li><i class="fas fa-tools"></i> | VS Code, CMD, Git Bash</li>
+      <li><a class='footer' href='mailto:andrew@apaul.dev'><i class="fas fa-envelope"></i> | andrew@apaul.dev</a></li>
+    </ul>
+  </p>
+</div>
+<!--HOMEPAGE ENDS AFTER NEXT DIV -->
+</div>
+    <hr class='title'>    
+  <div class='footer'>
+</body>
+<script>
+    $('img.zoom').on('mouseenter',event => {
+          $(event.currentTarget).animate({
+              height: '65px',
+              width: '65px',
+          },500)
+    }).on("mouseleave",event=>{
+        $(event.currentTarget).animate({
+            height: '50px',
+            width: '50px',
+        },200)
+    }) 
+    $('img.zoom').on('click',()=>{
+        alert('Downloaded. Thanks!')
+    })
+</script>
+</html>
