@@ -5,6 +5,15 @@
   <link rel="icon" href="../resources/favicon.png" type="image/x-icon"/>
   <script src="https://kit.fontawesome.com/e8eecf89dc.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $('*').hide();
+    const question= prompt("Please Enter The Password\nIt Was Given by Mr.Goverman")
+    if (question === 'mathisfun' || question === '5534'){
+      $('*').show();
+    }else{
+      window.location.replace("http://www.google.com");
+    }
+  </script>
   <style>
       p.item{
           text-align: center;
