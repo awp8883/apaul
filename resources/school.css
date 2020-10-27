@@ -148,6 +148,11 @@ a.footer{
   color: #009ad9;
   text-decoration: none;
 }
+iframe{
+  width: 100%;
+  height: 1000px;
+  border: none;
+}
 @font-face {
   font-family: 'Aftika';
   src: url('AftikaBold.woff2') format('woff2'),
