@@ -112,30 +112,51 @@ const timeSelect = ()=>{
   if(time >=8015 && time <8059){
     $('#math').css({
       "color": "green",
+    })      
+    $('#forensics,#world,#lit,#english,#design,#studyhall').css({
+      "color": "#009ad9",
     })
   }else if(time >=905 && time <9055){
     $('#forensics').css({
       "color": "green"
     })
+    $('#math,#world,#lit,#english,#design,#studyhall').css({
+      "color": "#009ad9",
+    })
   }else if(time >=1005 && time <10055){
   $('#world').css({
       "color": "green"
+    })
+    $('#math,#forensics,#lit,#english,#design,#studyhall').css({
+      "color": "#009ad9",
     })
   }else if(time >=10055 && time <11045){
     $('#lit').css({
       "color":"green"
     })
+    $('#forensics,#math,#world,#english,#design,#studyhall').css({
+      "color": "#009ad9",
+    })
   }else if(time >=12045 && time <13035){
     $('#english').css({
       "color":"green"
+    })
+    $('#forensics,#math,#world,#lit,#design,#studyhall').css({
+      "color": "#009ad9",
     })
   }else if(time >=13035 && time<14025){
     $('#design').css({
       "color":"green"
     })
+    $('#forensics,#math,#world,#lit,#english,#studyhall').css({
+      "color": "#009ad9",
+    })
   }else if(time >=24025 && time<15015){
     $('#studyhall').css({
       "color":"green"
+    })
+    $('#forensics,#math,#world,#lit,#english,#design').css({
+      "color": "#009ad9",
     })
   }
 }
