@@ -1,3 +1,6 @@
+body{
+  background-color: rgb(223, 223, 223);
+}
 img.banner{
   height: 100px;
   width: 500px;
@@ -7,12 +10,12 @@ img.banner{
 }
 div.banner{
   background-color: gray;
+  box-shadow: 4px 4px 4px black;
 }
 img.icons{
   width: 30px;
   height: 30px;
 }
-
 h1.section{
   font-family: 'Aftika';
   font-weight: bold;
@@ -53,6 +56,17 @@ img.zoom{
   width: 50px;
   position: relative;
 }
+img.class{
+  height:50px;
+  width:50px;
+  position: relative;
+  margin-left:10px;
+}
+img.gmail{
+  height: 50px;
+  width: 50px;
+  position: relative;
+}
 hr.title{
   border: 1px solid #009ad9;
 }
@@ -70,7 +84,7 @@ ul#menu li {
 	margin: 0 auto;
 }
 .button{
-  border-radius: 20%;
+  border-radius: 10%;
   margin-top: 10px;
   margin-right: 15px;
   padding: 10px;
@@ -79,6 +93,7 @@ ul#menu li {
   font-family: 'Aftika';
   color: rgb(46, 46, 46);
   transition-duration: 0.4s;
+  outline:none;
 }
 .button1{
   color:rgb(31, 31, 31);
@@ -112,6 +127,7 @@ ul#menu li {
   color: rgb(46, 46, 46);
   transition-duration: 0.4s;
   cursor: pointer;
+  outline:none;
 }
 .buttonx1{
   color:rgb(31, 31, 31);
@@ -124,6 +140,8 @@ ul#menu li {
 div.footer{
   background-color: gray;
   padding: 2px;
+  box-shadow: 4px -4px 4px black;
+  margin-top:20px;
 }
 p.footer{
   font-family: 'Aftika';
