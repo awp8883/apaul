@@ -50,6 +50,7 @@ div.list{
   font-style:normal;
   position: relative;
   left: 3px;
+
 }
 img.zoom{
   height: 50px;
@@ -66,6 +67,7 @@ img.gmail{
   height: 50px;
   width: 50px;
   position: relative;
+  margin-left:10px;
 }
 hr.title{
   border: 1px solid #009ad9;
@@ -166,7 +168,10 @@ a.footer{
   color: #009ad9;
   text-decoration: none;
 }
-
+.currentpd{
+  position: absolute;
+  top: 200px
+}
 @font-face {
   font-family: 'Aftika';
   src: url('AftikaBold.woff2') format('woff2'),
