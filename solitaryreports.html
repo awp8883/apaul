@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <title>Solitary Reports</title>
+    <script src="https://kit.fontawesome.com/e8eecf89dc.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="/resources/DOC.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/resources/DOC.png" type="image/x-icon"/>
+    <script>
+        $('*').hide();
+       const question= prompt("Please Enter The Password")
+       if (question === '391'){
+         $('*').fadeIn();
+       }else{
+         window.location.replace("https://gov.eclipse-rp.net/index.php");
+       }
+     </script>
+</head>
+<html>
+<div class=header>
+    <h1 class=title>
+        Solitary Reports
+    </h1>
+</div>
+<div class=form>
+    <form>
+        <input type='text' id='name' placeholder='Inmate Name'><br>
+        <input type='text' id='mins' placeholder="Time Sentenced"><br>
+        <textarea rows="5" cols="50" type='text' id='log' placeholder='Detailed Log of Events'></textarea><br>
+    </form>
+    <button class='button button1' onclick="makeCode()">Make Code!</button>
+</div>
+<div id=codeBlock class='codeblock'>
+    
+</div>
+<script>
+function makeCode(){
+    var cb = document.getElementById("codeBlock");
+    var Inamte_Name = document.getElementById("name").value;
+    var Time_Sentenced = document.getElementById("mins").value;
+    var Details = document.getElementById("log").value;
+    var currentdate = new Date();
+    var datetime = currentdate.getDay() + "/" + currentdate.getMonth() 
+    + "/" + currentdate.getFullYear() + '@' +
+    + currentdate.getHours() + ":" 
+    + currentdate.getMinutes() + ":" + currentdate.getSeconds();
+
+cb.innerHTML = `
+[img]https://cdn.discordapp.com/attachments/618576530402181153/620635803625848835/blankbanner.png[/img]
+[img]https://cdn.discordapp.com/attachments/612486027931680780/621760526342422528/solitary.png[/img]
+[divbox=white]
+[ol][/ol]
+[b]Date and Time of Report:[/b]
+[ol]${datetime}[/ol]
+[hr]
+[ol][/ol]
+[b]Name, Rank and Badge Number:[/b]
+[ol]SCOII Jack Singer - #391[/ol]
+[hr]
+[ol][/ol]
+[b]10-15s Confined:[/b]
+[ol]${Inamte_Name}[/ol]
+[hr]
+[b]Time Sentenced:[/b]
+[ol]${Time_Sentenced}[/ol]
+[/divbox]
+[ol][/ol]
+[img]https://cdn.discordapp.com/attachments/618576530402181153/620641907688603668/log.png[/img]
+[divbox=white][ol][/ol]
+[i]${Details}[/i]
+[ol][/ol]
+[/divbox]
+`
+}
+</script>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="/resources/tools.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="../resources/favicon.png" type="image/x-icon"/>
+        <script src="https://kit.fontawesome.com/e8eecf89dc.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+    <div class=header>
+    <button id='page2but' class="button button1" type=button style='float:right;  cursor: not-allowed;opacity:50%;'>Page 2</button></a>
+    <button id='homebut' class="button button1" type=button style='float:right;  cursor: pointer;'>Home</button></a>
+        <h1 class=title>Coding Tools</h1>
+    </div>
+    <div class=body>
+        <h2 class=title>Top Tools</h2>
+        <hr class=grays>
+        <div class=butcenter>
+        <button style='margin:auto;text-align: center;align-content: center;' class='buttonx buttonx1'>Test</button>
+        <hr class=grayd>
+        <h2 class='info'><u>Unix Timestamp:</u></h2>
+        <div class=details>
+        <h2 id='unix' style='color:#ff6b77;' class='info'></h2>
+        </div>
+        <hr class=grayd>
+        </div>
+    </div>
+    <div class=footer>
+        <p class=footer>
+            <ul class=footer>
+            <li><i class="fas fa-code"></i> | HTML, CSS, JavaScript, JQuery</li>
+            <li><i class="fas fa-tools"></i> | VS Code, CMD, Git Bash</li>
+            <li><a class='footer' href='mailto:andrew@apaul.'><i class="fas fa-envelope"></i> | andrew@apaul.dev</a></li>
+            </ul>
+        </p>
+    </div>
+    </body>
+    <script>
+        //unix
+        function unix(){
+            var t =  Math.floor(Date.now() / 1000)
+            document.getElementById('unix').innerHTML = t
+            
+        }
+        var loopUnix = setInterval(unix,1);
+    </script>
+</html>

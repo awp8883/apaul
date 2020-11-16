@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <title>Action Reports</title>
+    <script src="https://kit.fontawesome.com/e8eecf89dc.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="/resources/DOC.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/resources/DOC.png" type="image/x-icon"/>
+</head>
+<html>
+<div class=header>
+    <h1 class=title style='color:darkred;margin:0;margin-top:10px'>C.E.R.T.</h1>
+    <h1 class=title style='margin:0'>Action Reports</h1>
+</div>
+<div class=form style='height:fit-content; margin-left:10px'>
+    <form>
+        <input style='width:210px'type='text' id='incharge' placeholder='Operative In Charge'><br>
+        <input style='width:210px'type='text' id='inchargerank' placeholder="Rank of Operative in Charge"><br>
+        <input style='width:210px'type='text' id='date' placeholder="Date of Situation"><br>
+        <input style='width:210px'type='text' id='time' placeholder="Estimated Time of Situation"><br>
+        <textarea rows="5" cols="50" type='text' id='cause' placeholder='Cause of the Situation'></textarea><br>
+        <textarea rows="5" cols="50" type='text' id='action' placeholder='Course of Action'></textarea><br>
+        <textarea rows="5" cols="50" type='text' id='result' placeholder='Result'></textarea><br>
+        <textarea rows="5" cols="50" type='text' id='comments' placeholder='Additional Comments'></textarea><br>
+    </form>
+    <button class='button button1' onclick="makeCode()">Make Code!</button>
+</div>
+<div id=codeBlock class='codeblock' style='max-width: 700px;'>
+    
+</div>
+<script>
+function makeCode(){
+    var cb = document.getElementById("codeBlock");
+    var Operative_Incharge = document.getElementById("incharge").value;
+    var Operative_Incharge_Rank = document.getElementById("inchargerank").value;
+    var Cause = document.getElementById("cause").value;
+    var Action = document.getElementById("action").value;
+    var Result = document.getElementById("result").value;
+    var Comments = document.getElementById("comments").value;
+    var date = document.getElementById('date').value;
+    var time = document.getElementById('time').value;
+
+cb.innerHTML = `
+[img]https://i.imgur.com/82Dgfdw.png[/img]
+[img]https://i.imgur.com/cnzujDz.png[/img][divbox=white]
+[ol][/ol]
+<br>[b]Name of Operative in Charge:[/b] ${Operative_Incharge}<br>
+[b]Rank of Operative:[/b] ${Operative_Incharge_Rank}<br>
+[b]Date of Situation:[/b] ${date}<br>
+[b]Estimated Time of Situation:[/b] ${time}<br>
+[ol][/ol]
+[b]Cause of the situation:[/b]<br>
+${Cause}<br>
+[ol][/ol]
+[b]Course of action:[/b]<br>
+${Action}<br>
+[ol][/ol]
+[b]Result:[/b]<br>
+${Result}<br>
+[ol][/ol]
+[b]Additional comments:[/b]<br>
+${Comments}<br>
+[/divbox]
+`
+}
+</script>
+</html>

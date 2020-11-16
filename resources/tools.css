@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'Aftika';
+    src: url('AftikaBold.woff2') format('woff2'),
+        url('AftikaBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+body,html{
+    padding:0;
+    margin:0;
+}
+body{
+    background-image: url('/resources/code.png');
+    background-attachment: fixed;
+}
+div.header{
+    height:100px;
+    width: 100%;
+    background-color:#ff6b77;
+    margin: 0;
+    box-shadow: 4px 4px 4px black;
+
+}
+#back{
+    height:100%;
+    width:100%
+}
+h1.title{
+    color: rgb(168, 168, 168);
+    font-family: 'Aftika';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+    padding: 35px;
+    margin:0;
+    position: absolute;
+
+}
+h2.title{
+    color: rgb(168, 168, 168);
+    font-family: 'Aftika';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 25px;
+    text-align: center;
+    padding: 30px;
+    margin:0;
+}
+div.body{
+    height: 700px;
+    width: 700px;
+    background-color:#ff6b77;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-shadow: 4px 4px 4px black;
+    border:5px solid rgb(130,130,130);
+
+}
+.button{
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Aftika';
+    color: rgb(168, 168, 168);
+    transition-duration: 0.4s;
+    outline:none;
+
+  }
+.button1{
+    color:#ff6b77;
+    background-color: rgb(168, 168, 168);
+
+  }
+.button1:hover{
+    background-color:#ff6b77;
+    color:rgb(168,168,168);
+
+  }
+div.footer{
+    height:100px;
+    width: 100%;
+    background-color:#ff6b77;
+    margin: 0;
+    box-shadow: -4px -4px 4px black;
+    bottom:0;
+
+}
+p.footer{
+    font-family: 'Aftika';
+    color:  rgb(168,168,168);
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    margin:10px;
+
+  }
+ul.footer{
+    list-style: inside none;
+    display: inline;
+    text-align: center;
+    color: rgb(168,168,168);
+    margin: 0;
+    padding-top: 10px;
+    font-family: 'Aftika';
+    font-style: normal;
+    font-weight: bold;
+
+  }
+a.footer{
+    color:rgb(168,168,168);
+    text-decoration: none;
+
+  }
+hr.reds{
+    border: 1px solid #ff6b77
+}
+hr.grays{
+    border: 1px solid rgb(168,168,168)
+}
+hr.redd{
+    border: 1px dashed #ff6b77
+}
+hr.grayd{
+    border: 1px dashed rgb(168,168,168)
+}
+.butcenter{
+    text-align: center;
+    margin:0;
+    padding:0;
+    outline:0;
+    border:0;
+}
+h2.info{
+  font-family: 'Aftika';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 20px;
+  color: rgb(168, 168, 168);
+}
+div.details{
+  border-radius: 5%;
+  background-color: rgb(168, 168, 168);
+  padding: 10px;
+  width: 200px;
+  margin:auto;
+}
+h2.title{
+  font-family: 'Aftika';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 20px;
+  color: #ff6b77;
+  background-color: rgb(168, 168, 168);
+}
+.buttonx{
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left:40px;
+    padding-right:40px;
+    font-family: 'Aftika';
+    color: rgb(168, 168, 168);
+    transition-duration: 0.4s;
+    outline:none;
+    cursor: pointer;
+    font-size: 15px;
+  }
+.buttonx1{
+    color:#ff6b77;
+    background-color: rgb(168, 168, 168);
+  }
+.buttonx1:hover{
+    background-color:#ff6b77;
+    color:rgb(168,168,168);
+
+  }
