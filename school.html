@@ -196,6 +196,8 @@ const timeSelect = ()=>{
     })
     $('#englishdiv').addClass('currentpd');
     $('#mathdiv,#worlddiv,#litdiv,#forensicsdiv,#designdiv,#studyhalldiv').removeClass('currentpd')
+  }else if(time>=11045 && time<12045){
+    $('*').removeClass('currentpd');
   }else if(time >=13035 && time<14025){
     $('#design').css({
       "color":"green"
