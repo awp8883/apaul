@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Aftika';
+    src: url('AftikaBold.woff2') format('woff2'),
+        url('AftikaBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+div.header{
+    height:100px;
+    width: 100%;
+    background-color:rgb(255, 111, 111);
+    margin: 0;
+    border:0;
+    box-shadow: 4px 4px 4px black;
+    padding:10px;
+}
+html,body{
+    margin:0;
+    padding:0;
+    outline:0;
+    border:0;
+    background-color: gray;
+}
+h1.title{
+    text-align: center;
+    color:whitesmoke
+}
+*{
+    font-family: 'Aftika';
+    font-weight: bold;
+    font-style: normal;
+}
+div.quiz{
+    height:1000px;
+    width:750px;
+    margin:auto;
+    background-color: whitesmoke;
+    margin-top: 50px;
+    margin-bottom:50px;
+    border-radius: 2%;
+    box-shadow: 4px 4px 4px black;
+}
+#name{
+    margin:20px;
+    float:left;
+    width:150px;
+}
+#date{
+    margin:20px;
+    float:right;
+    width: 150px;
+}
+hr.rs{
+    border: 1px solid rgb(255, 111, 111);
+}
+hr.rd{
+    border: 1px dashed rgb(255, 111, 111);
+}
+h3.question{
+    color:rgb(255, 111, 111);
+    padding-left:10px
+}
+h4.options{
+    color:rgb(255, 111, 111);
+    padding-left:10px
+}
+label{
+    color: rgb(146, 93, 93);
+}
