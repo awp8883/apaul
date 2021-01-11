@@ -19,9 +19,9 @@
 <body>
 <!--BANNER -->
   <div class="banner">
-    <button onclick='page3x()'id='page3but' class="button button1" type=button style='float:right;  cursor: pointer;'>Exams</button></a>
-    <button onclick='page2x()'id='page2but' class="button button1" type=button style='float:right;  cursor: pointer;'>Math</button></a>
-    <button onclick='homex()' id='homebut' class="button button1" type=button style='float:right; cursor: pointer;'>Links</button></a>
+    <button onclick='xpage3x()'id='page3but' class="button button1 off" type=button style='float:right;'>Page 3</button></a>
+    <button onclick='page2x()'id='page2but' class="button button1" type=button style='float:right;'>Math</button></a>
+    <button onclick='homex()' id='homebut' class="button button1" type=button style='float:right;'>Links</button></a>
     <img class="banner" src="./resources/images/McLeanLogo_Static.png">
       <div class=table>
       <ul id='menu'>
@@ -108,16 +108,9 @@
 </div>
   </div>
 <div id='page3' style='display: none'>
-  <h1 class='section'>Exams</h1>
+  <h1 class='section'>Title</h1>
     <hr class='title'>
-    <h1 class='section' style='font-size: 10; margin:0;'>What to Do</h1>
-      <ul class=list>
-        <li>Study for Math | 20-30 Multiple Choice Questions</li>
-        <li>Forensics Box, and Story | One Page + Box</li>
-        <li>Study for World | FOUR Pages, Two Paragraphs, and Multiple Choice Questions</li>
-        <li>Study for Lit | Page of Questions</li>
-        <li>Study for English | Questions</li>
-        <li>Graphics Design Class | Figure out Project.</li>
+    <h1 class='section' style='font-size: 10; margin:0;'>Title</h1>
       </ul>
     <div class='footer'>
     <p class='footer'>Info:
@@ -167,7 +160,7 @@ const timeSelect = ()=>{
     $('#forensicsdiv,#worlddiv,#litdiv,#englishdiv,#designdiv,#studyhalldiv').removeClass('currentpd')
   }else if(time >=9005 && time <9055){
     $('#forensics').css({
-      "color": "green"
+      "color": "green",
     })
     $('#math,#world,#lit,#english,#design,#studyhall').css({
       "color": "#009ad9",
@@ -176,7 +169,7 @@ const timeSelect = ()=>{
     $('#mathdiv,#worlddiv,#litdiv,#englishdiv,#designdiv,#studyhalldiv').removeClass('currentpd');
   }else if(time >=1005 && time <10055){
   $('#world').css({
-      "color": "green"
+      "color": "green",
     })
     $('#math,#forensics,#lit,#english,#design,#studyhall').css({
       "color": "#009ad9",
@@ -185,7 +178,7 @@ const timeSelect = ()=>{
     $('#mathdiv,#forensicsdiv,#litdiv,#englishdiv,#designdiv,#studyhalldiv').removeClass('currentpd');
   }else if(time >=10055 && time <11045){
     $('#lit').css({
-      "color":"green"
+      "color":"green",
     })
     $('#forensics,#math,#world,#english,#design,#studyhall').css({
       "color": "#009ad9",
@@ -194,7 +187,7 @@ const timeSelect = ()=>{
     $('#mathdiv,#worlddiv,#forensicsdiv,#englishdiv,#designdiv,#studyhalldiv').removeClass('currentpd');
   }else if(time >=12045 && time <13035){
     $('#english').css({
-      "color":"green"
+      "color":"green",
     })
     $('#forensics,#math,#world,#lit,#design,#studyhall').css({
       "color": "#009ad9",
@@ -208,7 +201,7 @@ const timeSelect = ()=>{
     })
   }else if(time >=13035 && time<14025){
     $('#design').css({
-      "color":"green"
+      "color":"green",
     })
     $('#forensics,#math,#world,#lit,#english,#studyhall').css({
       "color": "#009ad9",
@@ -217,7 +210,7 @@ const timeSelect = ()=>{
     $('#mathdiv,#worlddiv,#litdiv,#englishdiv,#forensicsdiv,#studyhalldiv').removeClass('currentpd');
   }else if(time >=14025 && time<15015){
     $('#studyhall').css({
-      "color":"green"
+      "color":"green",
     })
     $('#forensics,#math,#world,#lit,#english,#design').css({
       "color": "#009ad9",

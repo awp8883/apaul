@@ -96,6 +96,7 @@ ul#menu li {
   color: rgb(46, 46, 46);
   transition-duration: 0.4s;
   outline:none;
+  cursor: pointer;
 }
 .button1{
   color:rgb(31, 31, 31);
@@ -187,4 +188,8 @@ ul.list{
   color: #009ad9;
   text-align: center;
   list-style-position: inside;
+}
+.off{
+  opacity: 50%;
+  cursor: not-allowed;
 }
