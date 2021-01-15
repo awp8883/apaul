@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <title>Force 5 Reports</title>
+    <script src="https://kit.fontawesome.com/e8eecf89dc.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="/resources/css/DOC.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="/resources/images/DOC.png" type="image/x-icon"/>
+    <script>
+        $('*').hide();
+       const question= prompt("Please Enter The Password")
+       if (question === '391'){
+         $('*').fadeIn();
+       }else{
+         window.location.replace("https://gov.eclipse-rp.net/index.php");
+       }
+     </script>
+</head>
+<html>
+<div class=header>
+    <h1 class=title>
+        Force 5 Reports
+    </h1>
+</div>
+<div class=form style='height:fit-content'>
+    <form>
+        <input type='text' id='witness' placeholder='Witnesses'><br>
+        <textarea rows="5" cols="50" type='text' id='sit' placeholder='Situation'></textarea><br>
+        <textarea rows="5" cols="50" type='text' id='concl' placeholder='Conclusion'></textarea><br>
+
+    </form>
+    <button class='button button1' onclick="makeCode()">Make Code!</button>
+</div>
+<div id=codeBlock class='codeblock'>
+    
+</div>
+<script>
+function makeCode(){
+    var cb = document.getElementById("codeBlock");
+    var Witness = document.getElementById("witness").value;
+    var Situ = document.getElementById("sit").value;
+    var Concl = document.getElementById("concl").value;
+    var currentdate = new Date();
+    var date = currentdate.getMonth()+1 + "/" + currentdate.getDate() 
+    + "/" + currentdate.getFullYear();
+
+cb.innerHTML = `
+[img]https://i.imgur.com/XkClkrv.png[/img]
+[img]https://i.imgur.com/mrc6uUq.png[/img]
+[divbox=white]
+[b]Date:[/b] ${date}<br><br>
+
+[b]Officers name:[/b] Jack Singer, #391<br><br>
+
+[b]Any witnesses? (Officers, other inmates, visitors)[/b] ${Witness}<br><br>
+
+[b]Rank:[/b] Senior Correctional Officer II<br><br>
+
+[b]Situation:[/b] ${Situ}<br><br>
+
+[b]Conclusion:[/b] ${Concl}
+
+`
+}
+</script>
+</html>

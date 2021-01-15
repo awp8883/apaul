@@ -39,8 +39,8 @@ function makeCode(){
     var Time_Sentenced = document.getElementById("mins").value;
     var Details = document.getElementById("log").value;
     var currentdate = new Date();
-    var datetime = currentdate.getDay() + "/" + currentdate.getMonth() 
-    + "/" + currentdate.getFullYear() + '@' +
+    var datetime = currentdate.getMonth()+1 + "/" + currentdate.getDate() 
+    + "/" + currentdate.getFullYear() + ' @ ' +
     + currentdate.getHours() + ":" 
     + currentdate.getMinutes() + ":" + currentdate.getSeconds();
 
