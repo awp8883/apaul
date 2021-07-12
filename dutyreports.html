@@ -1,19 +1,20 @@
 <!DOCTYPE html>
+
 <head>
     <title>Duty Reports</title>
     <script src="https://kit.fontawesome.com/e8eecf89dc.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="/resources/css/DOC.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="/resources/images/DOC.png" type="image/x-icon"/>
+    <link rel="icon" href="/resources/images/DOC.png" type="image/x-icon" />
     <script>
         $('*').hide();
-       const question= prompt("Please Enter The Password")
-       if (question === '391'){
-         $('*').fadeIn();
-       }else{
-         window.location.replace("https://gov.eclipse-rp.net/index.php");
-       }
-     </script>
+        const question = prompt("Please Enter The Password")
+        if (question === '685') {
+            $('*').fadeIn();
+        } else {
+            window.location.replace("https://gov.eclipse-rp.net/index.php");
+        }
+    </script>
 </head>
 <html>
 <div class=header>
@@ -30,21 +31,21 @@
     <button class='button button1' onclick="makeCode()">Make Code!</button>
 </div>
 <div id=codeBlock class='codeblock'>
-    
+
 </div>
 <script>
-function makeCode(){
-    var cb = document.getElementById("codeBlock");
-    var Duty_Hours = document.getElementById("dutyhrs").value;
-    var Num_Processed = document.getElementById("processed").value;
-    var Details = document.getElementById("log").value;
-    var currentdate = new Date();
-    var datetime = currentdate.getDay() + "/" + currentdate.getMonth() 
-    + "/" + currentdate.getFullYear() + ' @ ' +
-    + currentdate.getHours() + ":" 
-    + currentdate.getMinutes() + ":" + currentdate.getSeconds();
+    function makeCode() {
+        var cb = document.getElementById("codeBlock");
+        var Duty_Hours = document.getElementById("dutyhrs").value;
+        var Num_Processed = document.getElementById("processed").value;
+        var Details = document.getElementById("log").value;
+        var currentdate = new Date();
+        var datetime = currentdate.getDay() + "/" + currentdate.getMonth() +
+            "/" + currentdate.getFullYear() + ' @ ' +
+            +currentdate.getHours() + ":" +
+            currentdate.getMinutes() + ":" + currentdate.getSeconds();
 
-cb.innerHTML = `
+        cb.innerHTML = `
 [img]https://cdn.discordapp.com/attachments/618576530402181153/620635803625848835/blankbanner.png[/img]
 [img]https://cdn.discordapp.com/attachments/618576530402181153/620641897219751936/dutyreport.png[/img]
 [divbox=white]
@@ -66,6 +67,7 @@ cb.innerHTML = `
 [i]${Details}[/i]
 [ol][/ol][/divbox]
 `
-}
+    }
 </script>
+
 </html>
