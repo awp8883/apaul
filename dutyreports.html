@@ -9,7 +9,7 @@
     <script>
         $('*').hide();
         const question = prompt("Please Enter The Password")
-        if (question === '685') {
+        if (question === '795') {
             $('*').fadeIn();
         } else {
             window.location.replace("https://gov.eclipse-rp.net/index.php");
@@ -26,7 +26,8 @@
     <form>
         <input type='text' id='dutyhrs' placeholder='Hours on Duty'><br>
         <input type='text' id='processed' placeholder="10-15's Processed"><br>
-        <textarea rows="5" cols="50" type='text' id='log' placeholder='Detailed Log of Events'></textarea><br>
+        <textarea rows="5" cols="50" type='text' id='genLog' placeholder='General Duties'></textarea><br>
+        <textarea rows="5" cols="50" type='text' id='divLog' placeholder='Division Duties'></textarea><br>
     </form>
     <button class='button button1' onclick="makeCode()">Make Code!</button>
 </div>
@@ -38,7 +39,8 @@
         var cb = document.getElementById("codeBlock");
         var Duty_Hours = document.getElementById("dutyhrs").value;
         var Num_Processed = document.getElementById("processed").value;
-        var Details = document.getElementById("log").value;
+        var genLog = document.getElementById("genlog").value;
+        var divLog = document.getElementById("divLog").value;
         var currentdate = new Date();
         var datetime = currentdate.getDay() + "/" + currentdate.getMonth() +
             "/" + currentdate.getFullYear() + ' @ ' +
@@ -46,26 +48,34 @@
             currentdate.getMinutes() + ":" + currentdate.getSeconds();
 
         cb.innerHTML = `
-[img]https://cdn.discordapp.com/attachments/618576530402181153/620635803625848835/blankbanner.png[/img]
-[img]https://cdn.discordapp.com/attachments/618576530402181153/620641897219751936/dutyreport.png[/img]
+[img]https://i.imgur.com/IRwlwRE.png[/img]
+[docsubtitle]Duty Report Details[/docsubtitle]
 [divbox=white]
 [ol][/ol]
-[b]Date of Report:[/b]
-[ol]${datetime}[/ol]<br>
+[b]Date of Report:[/b] ${datetime}
+[ol][/ol]
 [hr]
 [ol][/ol]
-[b]Hours on duty:[/b]
-[ol]${Duty_Hours}[/ol]
+[b]Hours on duty:[/b] ${Duty_Hours}
+[ol][/ol]
 [hr]
 [ol][/ol]
-[b]10-15s Processed:[/b]
-[ol]${Num_Processed}[/ol]
+[b]10-15s Processed:[/b] ${Num_Processed}
+[ol][/ol]
 [/divbox]
 [ol][/ol]
-[img]https://cdn.discordapp.com/attachments/618576530402181153/620641907688603668/log.png[/img]
-[divbox=white][ol][/ol]
-[i]${Details}[/i]
+[docsubtitle]General Duties Log[/docsubtitle]
+[divbox=white]
+[ol][/ol]
+[i]${genLog}[/i]
 [ol][/ol][/divbox]
+[docsubtitle]Divisional Duties Log[/docsubtitle]
+[divbox=white]
+[ol][/ol]
+[i]${divLog}[/i]
+[ol][/ol]
+[/divbox]
+[img]https://i.imgur.com/EYwU3XA.png[/img]
 `
     }
 </script>
